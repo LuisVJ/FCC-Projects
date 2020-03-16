@@ -1,10 +1,37 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-    <meta charset="utf-8">
-    <title>Survey Form</title>
-    <link href="./Survey.css" rel="stylesheet" type="text/css">
-</head>
-<<body>
-    something else
-</body>
+  <head>
+      <meta charset="utf-8">
+      <title>Survey Form</title>
+      <link href="./survey.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+      <h1 id="title">Reading Habits Survey</h1>
+      <p id="Description">We would like to learn more about the reading habits of our visitors.</p>
+      <form id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email" id="email-label">Email</label>
+        <input type="text" id="email" name="email" placeholder="Enter your email adress" required>
+
+        <label for="age" id="number-label">Age</label>
+        <input type="number" id="age" name="age" min="5" max="100" placeholder="25">
+
+
+        <ul>
+          <li>
+            <label for="drama">
+              <input id="drama" type="checkbox" name="Genre">Drama
+            </label>
+          </li>
+        </ul>
+
+        <button type="submit">Submit</button>
+
+      </form>
+
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+  </body>
